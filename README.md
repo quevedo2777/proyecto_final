@@ -5,7 +5,7 @@ En este proyecto se realizara una recreacion de una calculadora cientifica.
 En este codigo estan las siguientes funciones
 1. operaciones basicas
 2. operaciones cientificas
-3. evaluacion de funcioness
+3. evaluacion de funcionesss
 4. graficacion en consola
 5. historial de operaciones
 ## 3. **requisitos**
@@ -15,6 +15,6 @@ En este codigo estan las siguientes funciones
 2. consola.py
 3. README.md
 ## 5. **creditos**
-Johan Quevedo
-Isaac Ruiz
+Johan Quevedo/
+Isaac Ruiz/
 Samuel Angel
