@@ -1,2 +1,0 @@
-#funciones basicas
-#funciones cientificas
