@@ -11,9 +11,11 @@ En este codigo estan las siguientes funciones
 ## 3. **requisitos**
 * Python 3.14.3
 ## 4. **contenido**
-1. modulo.py
-2. consola.py
-3. README.md
+1. funciones_basicas.py
+2. funciones_cientificas.py
+3. graficadora.py
+4. main.py
+5. README.md
 ## 5. **creditos**
 Johan Quevedo/
 Isaac Ruiz/

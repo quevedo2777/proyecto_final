@@ -1,4 +1,4 @@
-# main.py
+
 # Realizar menú y coordinar ejecución de la app
 import funciones_basicas
 import funciones_cientificas
