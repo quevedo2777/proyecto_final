@@ -18,7 +18,7 @@ def potencia(base, exponente):
 
     resultado = 1
 
-    for i in range(exponente):
+    for i in range(int(exponente)):
         resultado = resultado * base
 
     return resultado
