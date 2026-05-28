@@ -1,6 +1,3 @@
-#=====================================,
-#FUNCION PARA GRAFICAR,
-#=====================================,
 import funciones_cientificas
 def graficar(funcion):
 
@@ -24,9 +21,7 @@ def graficar(funcion):
     centro_x = ancho // 2
     centro_y = alto // 2
 
-    # =====================================
-    # DIBUJAR EJES
-    # =====================================
+#dibujar ejes
 
     # Eje X
     for x in range(ancho):
@@ -39,9 +34,7 @@ def graficar(funcion):
     # Centro
     plano[centro_y][centro_x] = "+"
 
-    # =====================================
-    # GRAFICAR FUNCION
-    # =====================================
+#graficar funcion
 
     x = -20
 
@@ -78,9 +71,7 @@ def graficar(funcion):
         # Más puntos para suavizar
         x += 0.2
 
-    # =====================================
-    # IMPRIMIR GRAFICA
-    # =====================================
+#imprimir grafica
 
     print("\n=== GRAFICA ===\n")
 

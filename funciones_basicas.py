@@ -1,8 +1,4 @@
 #funciones basicas
-#funciones cientificas
-#evaluacion de funciones
-#graficar en consola
-#historial de funciones
 def sumar(a, b):
     return a + b
 
