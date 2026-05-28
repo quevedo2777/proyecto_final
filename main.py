@@ -131,9 +131,28 @@ def main():
 
         # Opcion 4: Ejecutar graficar consola
         elif opcion == 4:
-            print("\n--- GRAFICAR FUNCIÓN ---")
-            # TODO: Tu compañero de graficación debe enlazar su renderizador aquí.
-            print("Módulo en desarrollo por compañero B.")
+         
+            print("\n=== GRAFICADORA ===")
+            print("Funciones disponibles:")
+
+            # Mostrar funciones del diccionario
+            for nombre in funciones_cientificas.funciones:
+                print("-", nombre)
+
+            opcion_funcion = input("\nSeleccione una función: ")
+
+              # Verificar si existe
+            if opcion_funcion in funciones_cientificas.funciones:
+
+                # Obtener función
+                funcion_seleccionada = funciones_cientificas.funciones[opcion_funcion]
+
+                # Graficar
+                graficadora.graficar(funcion_seleccionada)
+
+            else:
+                print("Función no válida")
+            
             historial.append("Se intentó renderizar una gráfica")
 
         # Opcion 5: Ejecutar historial de funciones
