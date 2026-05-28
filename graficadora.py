@@ -1,11 +1,12 @@
 #=====================================,
 #FUNCION PARA GRAFICAR,
 #=====================================,
+import funciones_cientificas
 def graficar(funcion):
 
     # Tamaño del plano
-    ancho = 61
-    alto = 31
+    ancho = 80
+    alto = 30
 
     # Crear matriz vacía
     plano = []
@@ -19,7 +20,7 @@ def graficar(funcion):
 
         plano.append(fila)
 
-    # Centro del plano cartesiano
+    # Centro de la gráfica
     centro_x = ancho // 2
     centro_y = alto // 2
 
@@ -35,27 +36,34 @@ def graficar(funcion):
     for y in range(alto):
         plano[y][centro_x] = "|"
 
-    # Punto central
+    # Centro
     plano[centro_y][centro_x] = "+"
 
     # =====================================
     # GRAFICAR FUNCION
     # =====================================
 
-    x = -10
+    x = -20
 
-    while x <= 10:
+    while x <= 20:
 
         try:
 
-            # Evaluar función
             y = funcion(x)
 
-            # Escala para que no se salga
-            y = y / 80
+            # Escalas distintas para que
+            # cada función se vea bien
 
-            # Convertir coordenadas matemáticas
-            # a coordenadas de pantalla
+            if funcion == funciones_cientificas.funciones["cubica"]:
+                y = y / 120
+
+            elif funcion == funciones_cientificas.funciones["cuadratica"]:
+                y = y / 8
+
+            else:
+                y = y / 2
+
+            # Coordenadas de pantalla
             pantalla_x = int(centro_x + x)
             pantalla_y = int(centro_y - y)
 
@@ -67,7 +75,7 @@ def graficar(funcion):
         except:
             pass
 
-        # Avanzar lentamente para más puntos
+        # Más puntos para suavizar
         x += 0.2
 
     # =====================================
